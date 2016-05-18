@@ -1,0 +1,28 @@
+{
+  "name": "ngwhatthefuck",
+  "version": "1.0.0",
+  "description": "Ever just wish you could ngWhatTheF*ck all the things?!?!? This small app generates different ngWTF's for your viewing pleasue. Inspired by my friend Heather's ng rant. Thanks Heather!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisdemars/ngWhatTheF-ck.git"
+  },
+  "author": "Chris DeMars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisdemars/ngWhatTheF-ck/issues"
+  },
+  "homepage": "https://github.com/chrisdemars/ngWhatTheF-ck",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.5"
+  }
+}
