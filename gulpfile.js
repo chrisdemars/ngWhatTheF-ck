@@ -1,8 +1,8 @@
-var gulp              = require('gulp');
-    sass              = require('gulp-sass');
-    cssmin            = require('gulp-cssmin');
-    rename            = require('gulp-rename');
-    prefix            = require('gulp-autoprefixer');
+var gulp              = require('gulp'),
+    sass              = require('gulp-sass'),
+    cssmin            = require('gulp-cssmin'),
+    rename            = require('gulp-rename'),
+    prefix            = require('gulp-autoprefixer'),
     browserSync       = require('browser-sync').create();
 
 // Static Server + watching scss/html files
@@ -22,7 +22,7 @@ gulp.task('sass', function () {
     .pipe(prefix('last 2 versions'))
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 });
 
