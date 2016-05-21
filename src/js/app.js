@@ -3,7 +3,25 @@
 var ngWTF = [
   'ngWhatTheFuck',
   'ngIHateYou',
-  'ngDammit'
+  'ngDammit',
+  'ngYouSuck',
+  'ngYouAreWorthless',
+  'ngIHateCode',
+  'ngAngularSucks',
+  'ngICantAngular',
+  'ngAngularWhat?',
+  'ngMad',
+  'ngFuckThis',
+  'ngFuckThat',
+  'ngFuckng',
+  'ngFuckAngular',
+  'ngIHateJavaScript',
+  'ngIHateJS',
+  'ngIHateAngular',
+  'ngShit',
+  'ngDamn',
+  'ngCantCode',
+  'ngDevLifeSucks'
 ];
 
 ngWTF = ngWTF[Math.floor(Math.random() * ngWTF.length)];
