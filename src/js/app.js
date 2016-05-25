@@ -1,6 +1,7 @@
-// Declaring an array with ng strings.
+'use strict';
 
-var ngWTF = [
+// Declaring an array with ng strings.
+var ngStuff = [
   'ngWhatTheFuck',
   'ngIHateYou',
   'ngDammit',
@@ -24,6 +25,8 @@ var ngWTF = [
   'ngDevLifeSucks'
 ];
 
-ngWTF = ngWTF[Math.floor(Math.random() * ngWTF.length)];
+function ngWtf() {
+  var ngStuff = ngStuff[Math.floor(Math.random() * ngStuff.length)];
+}
 
-console.log(ngWTF);
+ngWtf();
