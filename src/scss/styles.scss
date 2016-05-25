@@ -7,7 +7,7 @@ body {
 }
 
 .ng-wrapper {
-  width: 600px;
+  width: 1000px;
   margin: 0 auto;
   margin-bottom: -50px;
 }
@@ -30,11 +30,10 @@ body {
   color: #000000;
   width: 600px;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5em;
-  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
-  background-color: #F2F2F2;
 }
 
 .footer {
@@ -50,4 +49,8 @@ body {
   height: 50px;
   width: 300px;
   margin-bottom: 10px;
+}
+
+.center {
+  margin: 0 auto;
 }
