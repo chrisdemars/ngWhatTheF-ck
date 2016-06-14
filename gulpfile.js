@@ -5,19 +5,25 @@ var gulp              = require('gulp'),
     cssmin            = require('gulp-cssmin'),
     rename            = require('gulp-rename'),
     prefix            = require('gulp-autoprefixer'),
+    uglify            = require('gulp-uglify'),
+    concat            = require('gulp-concat'),
+    rename            = require('gulp-rename'),
     browserSync       = require('browser-sync').create();
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: './'
+        server: './',
+        browser: "google chrome canary"
     });
 
     gulp.watch('src/scss/*.scss', ['sass']);
+    gulp.watch('src/js/*.js', ['js']);
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
+// Configure CSS tasks.
 gulp.task('sass', function () {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
@@ -28,9 +34,19 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
+// Configure JS.
+gulp.task('js', function() {
+  return gulp.src('src/js/**/*.js')
+    .pipe(uglify())
+    .pipe(concat('app.js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('watch', function () {
   gulp.watch('src/scss/*.scss', ['sass']);
+  gulp.watch('src/js/*.js', ['js']);
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sass', 'serve']);
+gulp.task('default', ['js', 'sass', 'serve']);
