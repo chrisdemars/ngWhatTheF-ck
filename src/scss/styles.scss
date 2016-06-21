@@ -1,0 +1,105 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: linear-gradient(#2ecc71, orange);
+  font-family: arial;
+  color: #000000;
+  line-height: 1.5em;
+}
+
+.ng-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+}
+
+.heading {
+  color: #2ecc71;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 0px -15px 23px black;
+  margin-bottom: 100px;
+  -webkit-text-stroke: 2px black;
+}
+
+.twitter-tweet {
+  margin: 0 auto;
+  border: 1px solid #e1e8ed;
+}
+
+.copy {
+  color: #000000;
+  width: 800px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.ng-generate {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #2ecc71;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  background-color: transparent;
+}
+
+.btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  color: #000000;
+  border: 2px solid #000000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.3s ease-out,
+              color 0.3s ease-out;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+.footer {
+  margin-top: 120px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.footer-copy {
+
+}
+
+/******************************
+* Helper classes
+*******************************
+*/
+
+.btn-copy {
+  font-size: 20px;
+}
+
+.center {
+  margin: 0 auto;
+}
