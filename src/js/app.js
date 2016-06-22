@@ -1,12 +1,9 @@
 'use strict';
 
-
-
 // Event listener for button click.
 var btn = document.getElementById('button');
 
 btn.onclick = function () {
-
 
   // Declaring an array with ng strings.
   var ngStuff = [
@@ -34,8 +31,8 @@ btn.onclick = function () {
     'ngCantCode',
     'ngDevLifeSucks'
   ];
-  console.log(ngStuff);
+  // console.log(ngStuff);
   // Randomizes the array and puts a one of the values in to the generate ID.
   var random = ngStuff[Math.floor(Math.random() * ngStuff.length)];
-    document.getElementById('generate').innerHTML = random;
+  document.getElementById('generate').innerHTML = random;
 };
