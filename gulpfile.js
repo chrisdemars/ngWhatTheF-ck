@@ -11,15 +11,15 @@ var gulp              = require('gulp'),
     browserSync       = require('browser-sync').create();
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], ['js'], function() {
+gulp.task('serve', ['sass', 'js'], function() {
 
     browserSync.init({
         server: './',
         browser: "google chrome canary"
     });
 
-    gulp.watch('dist/scss/**/*.scss', ['sass']);
-    gulp.watch('dist/js/**/*.js', ['js']);
+    gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
