@@ -11,9 +11,7 @@ btn.onclick = function () {
     'ngArgh',
     'ngOhNo',
     'ngIHateYou',
-    'ngDammit',
-    'ngYouSuck',
-    'ngYouAreWorthless',
+    'ngWorthless',
     'ngIHateCode',
     'ngAngularSucks',
     'ngICantAngular',
@@ -21,7 +19,7 @@ btn.onclick = function () {
     'ngMad',
     'ngF*ckThis',
     'ngF*ckThat',
-    'ngF*ckng',
+    'ngF*ck-ng',
     'ngF*ckAngular',
     'ngIHateJavaScript',
     'ngIHateJS',
@@ -29,7 +27,8 @@ btn.onclick = function () {
     'ngSh*t',
     'ngDamn',
     'ngCantCode',
-    'ngDevLifeSucks'
+    'ngDevLifeSucks',
+    'ngTheStruggleIsReal'
   ];
   // console.log(ngStuff);
   // Randomizes the array and puts a one of the values in to the generate ID.
