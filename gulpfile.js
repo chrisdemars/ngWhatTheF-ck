@@ -9,13 +9,6 @@ var gulp              = require('gulp'),
     concat            = require('gulp-concat'),
     rename            = require('gulp-rename'),
 
-// Static Server + watching scss/html files
-gulp.task('sass', 'js', function() {
-
-    gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('src/js/**/*.js', ['js']);
-});
-
 // Configure CSS tasks.
 gulp.task('sass', function () {
   return gulp.src('src/scss/**/*.scss')
