@@ -10,7 +10,7 @@ var gulp              = require('gulp'),
     rename            = require('gulp-rename'),
 
 // Static Server + watching scss/html files
-gulp.task(['sass', 'js'], function() {
+gulp.task('sass', 'js', function() {
 
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['js']);
