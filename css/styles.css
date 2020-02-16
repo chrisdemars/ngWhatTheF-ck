@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(orange));
   background-image: linear-gradient(#2ecc71, orange);
   font-family: arial;
   color: #000000;
@@ -58,7 +59,8 @@ button {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin-top: 50px;
   display: inline-block;
   width: 200px;
@@ -68,8 +70,8 @@ button {
   text-align: center;
   outline: none;
   text-decoration: none;
-  transition: border-color 0.3s ease-out,
-              color 0.3s ease-out;
+  -webkit-transition: border-color 0.3s ease-out, color 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out;
 }
 
 .btn:hover,
@@ -77,8 +79,8 @@ button {
   cursor: pointer;
   color: #ffffff;
   border-color: #ffffff;
-  transition: border-color 0.4s ease-in,
-              color 0.4s ease-in;
+  -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  transition: border-color 0.4s ease-in, color 0.4s ease-in;
 }
 
 .footer {
@@ -87,15 +89,10 @@ button {
   text-align: center;
 }
 
-.footer-copy {
-
-}
-
 /******************************
 * Helper classes
 *******************************
 */
-
 .btn-copy {
   font-size: 20px;
 }
@@ -103,3 +100,4 @@ button {
 .center {
   margin: 0 auto;
 }
+/*# sourceMappingURL=styles.css.map */
