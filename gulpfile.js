@@ -7,7 +7,7 @@ var gulp              = require('gulp'),
     prefix            = require('gulp-autoprefixer'),
     uglify            = require('gulp-uglify'),
     concat            = require('gulp-concat'),
-    rename            = require('gulp-rename'),
+    rename            = require('gulp-rename')
 
 // Configure CSS tasks.
 gulp.task('sass', function () {
